@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grids</title>
+    <style>
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        div#conteiner{
+            border: 1px solid black;
+            height: 450px;
+            width: 450px;
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            gap: 74.9px;
+            align-items: stretch;
+            justify-items: stretch;
+            align-content: stretch;
+            justify-content: stretch;
+        }
+
+        div.item{
+            border: 1px solid rgba(0, 0, 0, 0.356);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    
+            <div id="conteiner">
+    
+                <div class="item">a</div>
+                <div class="item">b</div>
+                <div class="item">c</div>
+                <div class="item">d</div>
+                <div class="item">e</div>
+                <div class="item">f</div>
+                <div class="item">g</div>
+                <div class="item">h</div>
+                <div class="item">i</div>
+    
+            </div>
+</main>
+</body>
+</html>
