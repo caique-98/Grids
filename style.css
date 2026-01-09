@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body{
+    margin: 0px;
+}
+
+header{
+    display: grid;
+    grid-template: repeat(1, auto) 100px / repeat(1, auto);
+}
+
+h1{
+    grid-area: 1 / 1 / 1 / 1;
+}
+
+nav{
+    grid-area: 2 / 1 / 2 / 2;
+    place-content: center center;
+    place-items: center center;
+}
+
+nav > a{
+    padding: 20px;
+    background-color: black;
+}
+
+main{
+    display: grid;
+    grid-template: repeat(1, auto) / repeat(2, auto);
+}
+
+section#sec1{
+    grid-area: 1 / 1 / 1 / 1;
+    background-color: gray;
+    padding: 20px;
+}
+
+section#sec2{
+    grid-area: 1 / 2 / 3 / 3;
+    background-color: rgba(128, 128, 128, 0.459);
+}
+
+footer{
+    display: grid;
+    grid-template: auto / auto;
+    background-color: aquamarine;
+}
+
+
+
+
