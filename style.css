@@ -2,6 +2,7 @@
 
 body{
     margin: 0px;
+    ;
 }
 
 header{
@@ -41,9 +42,13 @@ section#sec2{
 }
 
 footer{
-    display: grid;
+    display: flex;
     grid-template: auto / auto;
     background-color: aquamarine;
+    position: sticky;
+    bottom: 0; 
+    width: 100%;
+    
 }
 
 
