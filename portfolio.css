@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+.conteiner{
+    background-color: burlywood;
+    display: grid;
+    width: 600px;
+    height: 600px;
+    grid-template: 100px 400px 100px / 100px 400px 100px;
+    border: 1px solid black
+}
+
+.caixa-h{
+    grid-area: 1 / 1 / 2 / 4;
+    border: 1px solid black;
+    display: grid;
+}
+
+.caixa-m{
+    grid-area: 2 / 1 / 3 / 4;
+    border: 1px solid black;
+    display: grid;
+    grid-template: repeat(3, auto) / repeat(3, auto);
+}
+
+.art1{
+    grid-area: 1 / 1 / 4 / 3;
+    border: 1px solid black;
+}
+
+.art2{
+    grid-area: 1 / 2 / 4 / ;
+    border: 1px solid pink;
+}
+
+.caixa-f{
+    grid-area: 3 / 1 / 4 / 4;
+    border: 1px solid black;
+}
