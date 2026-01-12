@@ -1,38 +1,55 @@
 @charset "UTF-8";
 
-.conteiner{
-    background-color: burlywood;
+body{
+    padding: 0;
+    margin: 0;
+}
+
+div.conteiner{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(226, 151, 151);
     display: grid;
-    width: 600px;
-    height: 600px;
-    grid-template: 100px 400px 100px / 100px 400px 100px;
-    border: 1px solid black
+    grid-template: 100px repeat(3, 1fr) 50px / 350px repeat(3, 1fr);
 }
 
-.caixa-h{
-    grid-area: 1 / 1 / 2 / 4;
-    border: 1px solid black;
-    display: grid;
+.header{
+    background-color: aqua;
+    grid: 1 / 1 / 2 / 2;
+    text-align: center;
+    place-content: center;
 }
 
-.caixa-m{
-    grid-area: 2 / 1 / 3 / 4;
-    border: 1px solid black;
-    display: grid;
-    grid-template: repeat(3, auto) / repeat(3, auto);
+.nav{
+    grid-area: 1 / 2 / 2 / 5;
+    background-color: aquamarine;
+    place-content: center;
+    text-align: end;
 }
 
-.art1{
-    grid-area: 1 / 1 / 4 / 3;
-    border: 1px solid black;
+.aside{
+    background-color: bisque;
+    grid-area: 2 / 1 / 5 / 2;
+    display: none;
 }
 
-.art2{
-    grid-area: 1 / 2 / 4 / ;
-    border: 1px solid pink;
+.main{
+    background-color: yellow;
+    grid-area: 2 / 1 / 5 / 5;
 }
 
-.caixa-f{
-    grid-area: 3 / 1 / 4 / 4;
-    border: 1px solid black;
+.footer{
+    grid-area: 5 / 1 / 6 / 6;
+    background-color: yellowgreen;
+}
+
+
+@media screen and (min-width: 900px) {
+    .aside{
+        display: grid;
+    }
+
+    .main{
+        grid-area: 2 / 2 / 5 / 6;
+    }
 }
