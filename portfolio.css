@@ -1,40 +1,71 @@
 @charset "UTF-8";
 
+
+
 body{
     padding: 0;
     margin: 0;
+    
 }
 
 div.conteiner{
     width: 100vw;
     height: 100vh;
-    background-color: rgb(226, 151, 151);
     display: grid;
     grid-template: 100px repeat(3, 1fr) 50px / 350px repeat(3, 1fr);
 }
 
 .header{
-    background-color: aqua;
     grid: 1 / 1 / 2 / 2;
     text-align: center;
     place-content: center;
+    place-items: center;
+    
+}
+
+h1{
+    font-weight: 500;
+    font-size: 38px;
+}
+
+h1 > a{
+    text-decoration: none;
+    color: black;
+}
+
+header > p{
+    position: absolute;
+    top: 5.5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
 }
 
 .nav{
     grid-area: 1 / 2 / 2 / 5;
-    background-color: aquamarine;
     place-content: center;
     text-align: end;
 }
 
+.code{
+    position: absolute;
+    top: 4.5%;
+    left: 35%;
+}
+
+nav > a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: black;
+    margin-right: 2em;
+    font-size: large;
+}
+
 .aside{
-    background-color: bisque;
     grid-area: 2 / 1 / 5 / 2;
     display: none;
 }
 
 .main{
-    background-color: yellow;
     grid-area: 2 / 1 / 5 / 5;
 }
 
@@ -43,13 +74,25 @@ div.conteiner{
     background-color: yellowgreen;
 }
 
+@media screen and (orientation: landscape) {
+    header > p{
+        position: relative;
+        top: auto;
+    }
+}
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 880px) {
     .aside{
         display: grid;
+        
     }
 
     .main{
         grid-area: 2 / 2 / 5 / 6;
+    }
+
+    header > p{
+        position: absolute;
+        top: 5.5%;
     }
 }
