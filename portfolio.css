@@ -29,7 +29,7 @@ h1{
 
 h1 > a{
     text-decoration: none;
-    color: black;
+    color: rgba(0, 0, 0, 0.849);
 }
 
 header > p{
@@ -62,7 +62,7 @@ span > a{
     text-decoration: none;
     margin-right: 30px;
     font-size: xx-large;
-    color: black;
+    color: rgba(0, 0, 0, 0.822);
 }
 
 .casa{
@@ -80,10 +80,11 @@ span > a{
 
 .codigo{
     display: none
-
 }
 
-
+body#modo-dark{
+    color: black;
+}
 
 
 .aside{
@@ -94,6 +95,34 @@ span > a{
 .main{
     grid-area: 3 / 1 / 5 / 5;
 }
+
+main > section > img{
+    aspect-ratio: 1/1;
+    width: 250px;
+    border-radius: 100%;
+    outline: 5px solid rgb(39, 39, 75);
+    overflow: hidden;
+    border: 6px solid rgba(0, 0, 0, 0);
+    display: block;
+    margin: auto;
+    margin-bottom: 2em;
+    margin-top: 1.2em;
+}
+
+main > section > h1{
+    text-align: center;
+    
+}
+
+main > section > p{
+    text-align: justify;
+    line-height: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    display: block;
+    text-indent: 40px;
+    padding: 8px 20px 0 20px;
+} 
 
 .footer{
     grid-area: 5 / 1 / 6 / 6;
